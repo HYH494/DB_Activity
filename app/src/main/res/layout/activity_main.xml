@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/t_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:text="NAME："
+        android:textSize="20sp"
+        tools:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/t_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t_name"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:text="EMAIL："
+        android:textSize="20sp"
+        tools:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/t_mobilenumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t_email"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:text="MOBILE NUMBER："
+        android:textSize="20sp"
+        tools:textStyle="bold" />
+    
+    <EditText
+        android:id="@+id/e_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_toRightOf="@+id/t_name"
+        android:layout_marginTop="28dp"/>
+
+    <EditText
+        android:id="@+id/e_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t_name"
+        android:layout_toRightOf="@+id/t_email"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="30dp"/>
+
+    <EditText
+        android:id="@+id/e_mobilenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t_email"
+        android:layout_toRightOf="@+id/t_mobilenumber"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="30dp"/>
+
+    <TextView
+        android:id="@+id/t_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t_mobilenumber"
+        android:layout_marginTop="50dp"
+        android:text="- - - - - - - - - - - \n- -no records- -\n- - - - - - - - - - - "
+        android:gravity="center"
+        android:textColor="#F44336"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/b_write"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="300dp"
+        android:layout_below="@+id/t_mobilenumber"
+        android:background="#ff003f"
+        android:text="WRITE"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/b_read"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="300dp"
+        android:layout_below="@+id/t_mobilenumber"
+        android:layout_toRightOf="@+id/b_write"
+        android:background="#ff003f"
+        android:text="READ"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/b_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="300dp"
+        android:layout_below="@+id/t_mobilenumber"
+        android:layout_toRightOf="@+id/b_read"
+        android:background="#ff003f"
+        android:text="UPDATE"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/b_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="300dp"
+        android:layout_below="@+id/t_mobilenumber"
+        android:layout_toRightOf="@+id/b_update"
+        android:background="#ff003f"
+        android:text="REMOVE"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+</RelativeLayout>
