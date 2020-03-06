@@ -66,14 +66,16 @@
 
     <TextView
         android:id="@+id/t_record"
-        android:layout_width="match_parent"
+        android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/t_mobilenumber"
         android:layout_marginTop="50dp"
-        android:text="- - - - - - - - - - - \n- -no records- -\n- - - - - - - - - - - "
-        android:gravity="center"
+        android:maxLines="9"
+        android:scrollbars="vertical"
+        android:text="                  - - - - - - - - - - - \n                  - no records-\n                  - - - - - - - - - - - "
         android:textColor="#F44336"
-        android:textSize="20sp"/>
+        android:layout_marginLeft="60dp"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/b_write"
